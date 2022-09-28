@@ -1,6 +1,6 @@
 # Astro Embed
 Horoscope embed for Notion made in React.
----
+
 ## Preview
 ![image](https://user-images.githubusercontent.com/49669196/192809682-b02306e1-783f-4161-948e-32b39dbf24b8.png)
 
