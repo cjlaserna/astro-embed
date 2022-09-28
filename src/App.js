@@ -6,7 +6,7 @@ import './index.css';
 
 function App() {
   return (
-    <div className="bg-transparent h-screen">
+    <div className="bg-transparent">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Card" element={<Card />} />

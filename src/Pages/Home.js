@@ -15,7 +15,7 @@ const Home = () => {
 
   return (
     <>
-      <div className='flex justify-center items-center flex-col h-full bg-base-100' data-theme={theme ? `${theme.toLowerCase()}` : "light"}>
+      <div className='flex justify-center items-center flex-col h-screen bg-base-100' data-theme={theme ? `${theme.toLowerCase()}` : "light"}>
         <div className='w-1/3'>
 
           <div className='w-1/2 my-5 px-1'>
