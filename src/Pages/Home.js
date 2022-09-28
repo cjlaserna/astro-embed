@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <>
       <div className='flex justify-center items-center flex-col h-screen bg-base-100' data-theme={theme ? `${theme.toLowerCase()}` : "light"}>
-        <div className='w-1/3'>
+        <div className='w-8/12'>
 
           <div className='w-1/2 my-5 px-1'>
             <h1 className='text-lg font-bold'>Astro Embeds</h1>
@@ -100,74 +100,77 @@ const Home = () => {
             }}>Copy</button>
 
           </div>
-        </div>
 
-        <div className='w-1/3 bg-base-200 p-5 rounded-lg'>
-          <div className='flex justify-center items-center flex-row w-full'>
-            <div className='fill-primary-focus w-1/12 mx-2'>
-              {(() => {
-                switch (sign.toLowerCase()) {
-                  case "aquarius":
-                    return (
-                      <Aquarius />
-                    )
-                  case "aries":
-                    return (
-                      <Aries />
-                    )
-                  case "cancer":
-                    return (
-                      <Cancer />
-                    )
-                  case "capricorn":
-                    return (
-                      <Capricorn />
-                    )
-                  case "gemini":
-                    return (
-                      <Gemini />
-                    )
-                  case "leo":
-                    return (
-                      <Leo />
-                    )
-                  case "libra":
-                    return (
-                      <Libra />
-                    )
-                  case "pisces":
-                    return (
-                      <Pisces />
-                    )
-                  case "sagittarius":
-                    return (
-                      <Sagittarius />
-                    )
-                  case "scorpio":
-                    return (
-                      <Scorpio />
-                    )
-                  case "taurus":
-                    return (
-                      <Taurus />
-                    )
-                  case "virgo":
-                    return (
-                      <Virgo />
-                    )
-                  default:
-                    return (
-                      <div>Sign Error</div>
-                    )
-                }
-              })()}
-            </div>
-            <div className="w-11/12">
-              <h1 className='text-lg font-bold capitalize'>Daily Horoscope - {sign}</h1>
+          <div className='w-full'>
+            <div className='w-8/12 bg-base-200 p-5 rounded-lg'>
+              <div className='flex justify-center items-center flex-row w-full'>
+                <div className='fill-primary-focus w-1/12 mx-2'>
+                  {(() => {
+                    switch (sign.toLowerCase()) {
+                      case "aquarius":
+                        return (
+                          <Aquarius />
+                        )
+                      case "aries":
+                        return (
+                          <Aries />
+                        )
+                      case "cancer":
+                        return (
+                          <Cancer />
+                        )
+                      case "capricorn":
+                        return (
+                          <Capricorn />
+                        )
+                      case "gemini":
+                        return (
+                          <Gemini />
+                        )
+                      case "leo":
+                        return (
+                          <Leo />
+                        )
+                      case "libra":
+                        return (
+                          <Libra />
+                        )
+                      case "pisces":
+                        return (
+                          <Pisces />
+                        )
+                      case "sagittarius":
+                        return (
+                          <Sagittarius />
+                        )
+                      case "scorpio":
+                        return (
+                          <Scorpio />
+                        )
+                      case "taurus":
+                        return (
+                          <Taurus />
+                        )
+                      case "virgo":
+                        return (
+                          <Virgo />
+                        )
+                      default:
+                        return (
+                          <div>Sign Error</div>
+                        )
+                    }
+                  })()}
+                </div>
+                <div className="w-11/12">
+                  <h1 className='text-lg font-bold capitalize'>Daily Horoscope - {sign}</h1>
+                </div>
+              </div>
+              This is a preview of your horoscope embed.
             </div>
           </div>
-          This is a preview of your horoscope embed.
         </div>
+
 
       </div>
       <ToastContainer
