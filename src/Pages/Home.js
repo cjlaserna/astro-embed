@@ -77,8 +77,8 @@ const Home = () => {
 
           </div>
           <div className='my-2 w-full'>
-            <input type="text" ref={embedLink} value={`${window.location.origin}/card?theme=${theme ? theme.toLowerCase() : "light"}&sign=${sign ? sign.toLowerCase() : "aquarius"}`} className="input input-bordered w-7/12" />
-            <button className="btn btn-primary w-2/12 ml-2" onClick={
+            <input type="text" ref={embedLink} value={`${window.location.origin}/card?theme=${theme ? theme.toLowerCase() : "light"}&sign=${sign ? sign.toLowerCase() : "aquarius"}`} className="input input-bordered w-full" />
+            <button className="btn btn-primary w-full my-2" onClick={
               () => {
                 setTheme(themeRef.current.value)
                 setSign(signRef.current.value)
@@ -86,7 +86,7 @@ const Home = () => {
             }>
               Update
             </button>
-            <button className="btn btn-primary w-2/12 mx-2" onClick={() => {
+            <button className="btn btn-primary w-full mb-2" onClick={() => {
               navigator.clipboard.writeText(embedLink.current.value);
               toast.success("Copied Link Successfully.", {
                 position: "bottom-center",
@@ -102,7 +102,7 @@ const Home = () => {
           </div>
 
           <div className='w-full'>
-            <div className='w-8/12 bg-base-200 p-5 rounded-lg'>
+            <div className='bg-base-200 p-5 rounded-lg'>
               <div className='flex justify-center items-center flex-row w-full'>
                 <div className='fill-primary-focus w-1/12 mx-2'>
                   {(() => {
