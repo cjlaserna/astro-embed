@@ -20,7 +20,8 @@ const Home = () => {
 
           <div className='w-1/2 my-5 px-1'>
             <h1 className='text-lg font-bold'>Astro Embeds</h1>
-            <h2 className='text-md accent'>Catherine Laserna</h2>
+            <h2 className='text-md accent'>Catherine Laserna - <a href="https://github.com/cjlaserna/astro-embed" target="_blank" rel="noreferrer"><span className='underline primary'> View Github Repository</span></a></h2>
+            <p>For API and horoscope retrieval information I use <a href="https://aztro.sameerkumar.website/" target='_blank' rel='noreferrer'><span className='underline primary'>Aztro API</span></a></p>
           </div>
 
           <div className='w-1/2 flex items-center'>
