@@ -30,8 +30,8 @@ const Card = () => {
     }, []);
     return (
         <>
-            <div className='flex flex-col h-full' data-theme={theme ? `${theme}` : "light"}>
-                <div className='w-1/3 bg-base-200 p-5 rounded-lg'>
+            <div className='flex flex-col'>
+                <div className='w-1/3 bg-base-200 p-5 rounded-lg' data-theme={theme ? `${theme}` : "light"}>
                     <div className='flex justify-center items-center flex-row w-full'>
 
                         <div className='fill-primary-focus w-1/12 mx-2'>
